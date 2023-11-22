@@ -3,9 +3,9 @@ i=0
 chaine="abcdefghijklmnopqrstuvwxyz"*10
 print(len(chaine))
 
-print(chaine[0])
 
-while i <= len(chaine):
+
+while i <= (len(chaine)+1):
     print(chaine[0:i])
     if i <=0:
         i+=1
