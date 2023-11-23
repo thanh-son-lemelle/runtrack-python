@@ -21,6 +21,6 @@ if resultat1 == True:
         print("le triangle est isocèle")
         if (a**2 + b**2) == c**2 or (b**2+c**2) == a**2 or (c**2+a**2)==b**2:
             print("le triangle est aussi rectangle")
-    elif int((a**2 + b**2)) == int(c**2) or int((b**2+c**2)) == int(a**2) or int((c**2+a**2))==int(b**2):
+    elif (a**2 + b**2) == int(c**2) or (b**2+c**2) == int(a**2) or (c**2+a**2)==int(b**2):
         print("le triangle est rectangle")
 
