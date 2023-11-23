@@ -8,14 +8,19 @@ a=float(input("rentrez a : "))
 b=float(input("rentrez b : "))
 c=float(input("rentrez c : "))
 
-if a + b > c:
+if a + b > c and  a + c > b and b + c > a :
     resultat1=True
-elif a + c > b:
-    resultat2=True
-elif b + c > a:
-    resultat3=True
 else:
-    print("nous n'avons pas un triangle")
+    print("nous n'avons pas de triangle")
 
-if resultat1 == True and resultat2 == True and resultat3 == True:
-    print("nous avons un trinagle")
+if resultat1 == True:
+    print("nous avons un triangle")
+    if a == b and b == c:
+        print("le triangle est équilatéral")
+    elif a == b and b!= c or a == c and a != b or b==c and c!=a:
+        print("le triangle est isocèle")
+        if (a**2 + b**2) == c**2 or (b**2+c**2) == a**2 or (c**2+a**2)==b**2:
+            print("le triangle est aussi rectangle")
+    elif int((a**2 + b**2)) == int(c**2) or int((b**2+c**2)) == int(a**2) or int((c**2+a**2))==int(b**2):
+        print("le triangle est rectangle")
+
