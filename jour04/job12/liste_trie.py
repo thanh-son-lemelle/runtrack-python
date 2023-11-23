@@ -11,6 +11,6 @@ def trie(l):
         for y in range(long(l)-i-1):
             if l[y] > l[y+1] :
                 l[y], l[y+1] = l[y+1], l[y]
-    return trie(l)
+    return l
 
 print(trie(L))
